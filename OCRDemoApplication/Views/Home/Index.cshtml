@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "";
+}
+<h1>@ViewBag.Title</h1>
+
+<h1>Data Extract</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">File Type</th>
+            <th scope="col">File Name</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>PDF</td>
+            <td>Antonios 2020.pdf</td>
+            <td>
+                <a href="@Url.Content("~/SampleFiles/Antonios 2020.pdf")" target="_blank">
+                    <span class="glyphicon glyphicon-file"></span> Preview
+                </a>
+            </td>
+            <td>
+                <a href="@Url.Content("~/Home/ViewFileData?fileName=Antonios 2020.pdf")" target="_blank">
+                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> View Data
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>PDF</td>
+            <td>CRYSTAL ICE COMPANY INC 2018.pdf</td>
+            <td>
+                <a href="@Url.Content("~/SampleFiles/CRYSTAL ICE COMPANY INC 2018.pdf")" target="_blank">
+                    <span class="glyphicon glyphicon-file"></span> Preview
+                </a>
+            </td>
+            <td>
+                <a href="@Url.Content("~/Home/ViewFileData?fileName=CRYSTAL ICE COMPANY INC 2018.pdf")" target="_blank">
+                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> View Data
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JPG</td>
+            <td>Antonios 2020.jpg</td>
+            <td>
+                <a href="@Url.Content("~/SampleFiles/Antonios 2020.jpg")" target="_blank">
+                    <span class="glyphicon glyphicon-file"></span> Preview
+                </a>
+            </td>
+            <td>
+                <a href="@Url.Content("~/Home/ViewFileData?fileName=Antonios 2020.jpg")" target="_blank">
+                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> View Data
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>PNG</td>
+            <td>CRYSTAL ICE COMPANY INC 2018.png</td>
+            <td>
+                <a href="@Url.Content("~/SampleFiles/CRYSTAL ICE COMPANY INC 2018.png")" target="_blank">
+                    <span class="glyphicon glyphicon-file"></span> Preview
+                </a>
+            </td>
+            <td>
+                <a href="@Url.Content("~/Home/ViewFileData?fileName=CRYSTAL ICE COMPANY INC 2018.png")" target="_blank">
+                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> View Data
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h1>Operations</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Operation</th>
+            <th scope="col">File Name</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2</td>
+            <td>Modify</td>
+            <td>PDF Form.pdf</td>
+            <td>
+                <a href="@Url.Content("~/SampleFiles/PDF Form.pdf")" target="_blank">
+                    <span class="glyphicon glyphicon-file"></span> Preview
+                </a>
+            </td>
+            <td>
+                <a href="@Url.Content("~/Home/FillPDFForm?fileName=PDF Form.pdf")" target="_blank">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Modify
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Split</td>
+            <td>Antonios 2020 10 Pages.pdf</td>
+            <td>
+                <a href="@Url.Content("~/SampleFiles/Antonios 2020 10 Pages.pdf")" target="_blank">
+                    <span class="glyphicon glyphicon-file"></span> Preview
+                </a>
+            </td>
+            <td>
+                <a href="@Url.Content("~/Home/SplitPDF?fileName=Antonios 2020 10 Pages.pdf")" target="_blank">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Split
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>

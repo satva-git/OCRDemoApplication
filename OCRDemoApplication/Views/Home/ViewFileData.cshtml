@@ -1,0 +1,28 @@
+﻿@model OCRDemoApplication.Models.ApiResult
+@{
+    ViewBag.Title = "Data for " + @Request.QueryString["fileName"];
+}
+<h1>@ViewBag.Title</h1>
+
+@if (@Model.DataDictionary != null)
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Key</th>
+                <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dict in Model.DataDictionary)
+            {
+                <tr>
+                    @foreach (var key in dict.Keys)
+                    {
+                        <td>@dict[key]</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
