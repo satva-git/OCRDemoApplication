@@ -16,16 +16,17 @@ namespace OCRDemoApplication.Controllers
             return View();
         }
 
-        public async Task<ActionResult> ViewFileData(string fileName)
+        public ActionResult ViewFileData(string fileName)
         {
             try
             {
                 ITextractService _TextractService = new TextractService();
                 fileName = sampleFileFolderPath + fileName;
                 ApiResult apiResult = new ApiResult();
-                await _TextractService.SaveFileToBucketAndGetResponse(fileName, apiResult);
-                apiResult.DataDictionary = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>
-                    (JsonConvert.SerializeObject(apiResult.Data));
+                // async Task<ActionResult> 
+                // await _TextractService.SaveFileToBucketAndGetResponse(fileName, apiResult);
+                // apiResult.DataDictionary = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>
+                //    (JsonConvert.SerializeObject(apiResult.Data));
                 return View(apiResult);
             }
             catch (Exception ex)
