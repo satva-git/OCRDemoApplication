@@ -11,7 +11,7 @@ namespace OCRDemoApplication.Controllers
 {
     public class HomeController : BaseController
     {
-        // Test
+        // Test 1
         public ActionResult Index()
         {
             return View();
