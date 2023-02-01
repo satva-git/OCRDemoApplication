@@ -26,26 +26,3 @@
         </tbody>
     </table>
 }
-<h1>Balance Sheet</h1>
-@if (@Model.DataDictionary2 != null)
-{
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th scope="col">Key</th>
-                <th scope="col">Value</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var dict in Model.DataDictionary2)
-            {
-                <tr>
-                    @foreach (var key in dict.Keys)
-                    {
-                        <td>@dict[key]</td>
-                    }
-                </tr>
-            }
-        </tbody>
-    </table>
-}

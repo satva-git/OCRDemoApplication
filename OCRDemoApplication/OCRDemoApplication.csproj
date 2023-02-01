@@ -207,6 +207,7 @@
     <None Include="Properties\PublishProfiles\Local Publish.pubxml" />
     <Content Include="SampleFiles\Satva Solutions 2020 10 Pages.pdf" />
     <Content Include="SampleFiles\Satva Solutions 2020.pdf" />
+    <Content Include="Views\Home\ViewImageData.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -257,6 +258,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UpdatedFileResult.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
